@@ -207,8 +207,8 @@ if message := st.chat_input("폴리봇에게 질문해 보세요!"):
                 )
 
             except Exception as error:
-    st.error("Gemini 요청 중 오류가 발생했습니다.")
-    st.code(f"{type(error).__name__}: {error}")
+                st.error("Gemini 요청 중 오류가 발생했습니다.")
+                st.code(f"{type(error).__name__}: {error}")
 
             else:
                 st.markdown(reply.output_text)
